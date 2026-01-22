@@ -18,7 +18,7 @@ const Resumo = () => {
           </span>
         </div>
         <div className="box">
-          <h1 className="font-bold">Recebidos</h1>
+          <h1 className="font-bold text-cor1">Recebidos</h1>
           <span className='font-bold'>
             {data
               .filter((item) => item.status !== 'falha')
@@ -27,7 +27,7 @@ const Resumo = () => {
           </span>
         </div>
         <div className="box">
-          <h1 className="font-bold text-">Processando</h1>
+          <h1 className="font-bold text-cor1">Processando</h1>
           <span className='font-bold'>
             {data
               .filter((item) => item.status === 'processando')
