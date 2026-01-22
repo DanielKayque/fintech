@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-cor4 text-cor2 text-2xl font-sans;
+}
+
+@layer components {
+  .box {
+    padding: var(--spacing-padrao);
+    border-radius: var(--spacing-padrao);
+    background: var(--color-5);
+  }
+}
+
+button {
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.flex {
+  display: flex;
+  gap: var(--spacing-padrao);
+}
+
+.flex > * {
+  flex: 1;
+}
+
+.mb {
+  margin-bottom: var(--spacing-padrao);
+}
+
+.bg-1 {
+  background-color: var(--color-1);
+}
+
+.bg-2 {
+  background-color: var(--color-2);
+}
+
+.bg-3 {
+  background-color: var(--color-3);
+}
+
+.bg-4 {
+  background-color: var(--color-4);
+}
+
+.bg-5 {
+  background-color: var(--color-5);
+}
+
+.container {
+  display: grid;
+  padding: var(--spacing-padrao);
+  gap: var(--spacing-padrao);
+  grid-template-columns: 240px auto;
+  align-items: start;
+}
+
+.p-padrao {
+  @apply py-3 px-5;
+}
+
+@layer base {
+  :root {
+    --color-1: #463220;
+    --color-2: #66593c;
+    --color-3: #eceadd;
+    --color-4: #f7f8f5;
+    --color-5: #fff;
+    --spacing-small: 0.625rem;
+    --spacing-padrao: 1.25rem;
+  }
+}
