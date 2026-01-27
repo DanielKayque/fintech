@@ -8,7 +8,7 @@ const Resumo = () => {
 
   return (
     <section>
-      <div className="rounded-[var(--spacing-padrao)] p-padrao flex sm:flex-col xl:flex-row">
+      <div className="rounded-[var(--spacing-padrao)] p-padrao flex flex-col lg:flex-row">
         <div className="box">
           <h1 className="font-bold text-cor1">Vendas</h1>
           <span className="font-bold">

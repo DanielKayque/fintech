@@ -15,7 +15,7 @@ const App = () => {
       <GlobalStorage>
         <div className="container">
           <Sidenav />
-          <main className="flex flex-col">
+          <main className="flex flex-col w-full">
             <Header />
             <Routes>
               <Route path="/" element={<Resumo />} />

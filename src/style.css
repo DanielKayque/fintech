@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-cor4 text-cor2 text-2xl font-sans;
+  @apply bg-cor4 text-cor2 text-2xl font-sans w-full;
 }
 
 @layer components {

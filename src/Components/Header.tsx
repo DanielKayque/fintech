@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <header className="">
-      <div className="mb flex">
+      <div className="mb flex lg:flex-row flex-col-reverse">
         <DateRange />
         <Title title={title} />
       </div>
