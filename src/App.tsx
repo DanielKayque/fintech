@@ -13,9 +13,9 @@ const App = () => {
   return (
     <BrowserRouter>
       <GlobalStorage>
-        <div className="container">
+        <div className="containers">
           <Sidenav />
-          <main className="flex flex-col w-full">
+          <main className="flex flex-col">
             <Header />
             <Routes>
               <Route path="/" element={<Resumo />} />

@@ -47,7 +47,7 @@ li {
   margin-bottom: var(--spacing-padrao);
 }
 
-.container {
+.containers {
   display: grid;
   padding: var(--spacing-padrao);
   gap: var(--spacing-padrao);
@@ -55,8 +55,8 @@ li {
   align-items: start;
 }
 
-@media (max-width: 1200px) {
-  .container {
+@media (max-width: 782px) {
+  .containers {
     grid-template-columns: 1fr;
   }
 }
