@@ -47,32 +47,18 @@ li {
   margin-bottom: var(--spacing-padrao);
 }
 
-.bg-1 {
-  background-color: var(--color-1);
-}
-
-.bg-2 {
-  background-color: var(--color-2);
-}
-
-.bg-3 {
-  background-color: var(--color-3);
-}
-
-.bg-4 {
-  background-color: var(--color-4);
-}
-
-.bg-5 {
-  background-color: var(--color-5);
-}
-
 .container {
   display: grid;
   padding: var(--spacing-padrao);
   gap: var(--spacing-padrao);
   grid-template-columns: 240px auto;
   align-items: start;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .p-padrao {

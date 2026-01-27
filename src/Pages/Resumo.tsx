@@ -1,5 +1,6 @@
 import React from 'react';
 import { useData } from '../Hooks/useContext';
+import Graficos from './Graficos';
 
 const Resumo = () => {
   const { data } = useData();
@@ -7,10 +8,10 @@ const Resumo = () => {
 
   return (
     <section>
-      <div className="rounded-[var(--spacing-padrao)] px-5 py-3 flex">
+      <div className="rounded-[var(--spacing-padrao)] p-padrao flex sm:flex-col xl:flex-row">
         <div className="box">
           <h1 className="font-bold text-cor1">Vendas</h1>
-          <span className='font-bold'>
+          <span className="font-bold">
             {data
               .filter((item) => item.status === 'pago')
               .reduce((acc, item) => acc + item.preco, 0)
@@ -19,7 +20,7 @@ const Resumo = () => {
         </div>
         <div className="box">
           <h1 className="font-bold text-cor1">Recebidos</h1>
-          <span className='font-bold'>
+          <span className="font-bold">
             {data
               .filter((item) => item.status !== 'falha')
               .reduce((acc, item) => acc + item.preco, 0)
@@ -28,7 +29,7 @@ const Resumo = () => {
         </div>
         <div className="box">
           <h1 className="font-bold text-cor1">Processando</h1>
-          <span className='font-bold'>
+          <span className="font-bold">
             {data
               .filter((item) => item.status === 'processando')
               .reduce((acc, item) => acc + item.preco, 0)
@@ -36,7 +37,9 @@ const Resumo = () => {
           </span>
         </div>
       </div>
-      <div className="box">Gráficos</div>
+      <div className="box">
+        <Graficos data={data} />
+      </div>
     </section>
   );
 };
